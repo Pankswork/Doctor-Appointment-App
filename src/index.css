@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Futuristic Look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* gray-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee; /* cyan-400 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4; /* cyan-500 */
+}
+
+/* Calendar Fixes */
+.react-calendar__tile--now {
+  background: #eab308 !important; /* yellow-500 */
+  color: black !important;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ca8a04 !important; /* yellow-600 */
+  color: black !important;
+}
+
+.react-calendar__tile--active {
+  background: #06b6d4 !important; /* cyan-500 */
+  color: white !important;
+  border-radius: 8px;
+}
